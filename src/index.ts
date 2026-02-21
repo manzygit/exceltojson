@@ -495,25 +495,25 @@ export default class ExcelDocument {
 }
 
 
-async function run(): Promise<void> {
-    let excel: ExcelDocument = new ExcelDocument({
-        excelFilePath: path.resolve(__dirname, "../assets/dummy.xlsx"),
-        // filterOptions: {
-        //     mode: 'excludes',
-        //     filters: ["Sheet1"]
-        // }
-    });
-    // writeFileSync(
-    //     path.resolve(__dirname, "../output/data.json"),
-    //     JSON.stringify(await excel.parseAsJson(), null, 4),
-    //     "utf-8"
-    // );
-    excel.writeJsonFile({
-        filepath: path.resolve(__dirname, "../output/data.json")
-    })
-}
+// async function run(): Promise<void> {
+//     let excel: ExcelDocument = new ExcelDocument({
+//         excelFilePath: path.resolve(__dirname, "../assets/dummy.xlsx"),
+//         // filterOptions: {
+//         //     mode: 'excludes',
+//         //     filters: ["Sheet1"]
+//         // }
+//     });
+//     // writeFileSync(
+//     //     path.resolve(__dirname, "../output/data.json"),
+//     //     JSON.stringify(await excel.parseAsJson(), null, 4),
+//     //     "utf-8"
+//     // );
+//     excel.writeJsonFile({
+//         filepath: path.resolve(__dirname, "../output/data.json")
+//     })
+// }
 
-run();
+// run();
 
 // async function run(): Promise<void> {
 //     let excelWorksheet: ExcelParser = await ExcelParser.readFile({
