@@ -1,0 +1,33 @@
+{
+  "name": "exceltojson",
+  "version": "4.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npx tsc && cls && node .",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "pack": "npm run build && npm pack"
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "author": "manzygit",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/exceljs": "^1.3.2",
+    "@types/node": "^22.15.29",
+    "esbuild": "^0.25.5",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "exceljs": "^4.1.1"
+  }
+}
